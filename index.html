@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+  <h1>Welcome to My Webpage!</h1>
+  <p>Click the button below to see a message.</p>
+  <button onclick="displayMessage()">Click Me</button>
 
-<p>My 2nd paragraph.</p>
+  <p id="message" style="margin-top:20px; font-weight:bold; color:green;"></p>
+
+  <script>
+    function displayMessage() {
+      document.getElementById("message").textContent = "Thanks for visiting! Have a great day!";
+    }
+  </script>
 
 </body>
 </html>
